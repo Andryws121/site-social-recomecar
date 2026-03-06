@@ -1,6 +1,6 @@
 /* =========================================
    SOCIAL RECOMEÇAR - ESTILO COMPLETO 
-   Foco em Responsividade, Efeitos e Botão Único
+   Foco em Responsividade, Efeitos e Botões Flutuantes
    ========================================= */
 
 :root {
@@ -113,6 +113,7 @@ nav ul li a:hover { color: var(--secondary); }
     flex-wrap: wrap; 
 }
 
+/* Base dos botões do Hero */
 .btn-primary, .btn-secondary {
     padding: 15px 30px;
     border-radius: 50px;
@@ -124,11 +125,25 @@ nav ul li a:hover { color: var(--secondary); }
     gap: 10px;
     text-decoration: none;
     color: white;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-.btn-primary { background-color: #25d366; }
-.btn-secondary { background-color: #e1306c; }
+/* Cores e sombras flutuantes dos botões principais */
+.btn-primary { 
+    background-color: #25d366; 
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); 
+}
+
+.btn-secondary { 
+    background-color: #e1306c; 
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4); 
+}
+
+/* Efeito Hover: Botões sobem quando passa o mouse */
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
 
 /* ================ CONTEÚDO ================= */
 .container {
@@ -162,13 +177,13 @@ nav ul li a:hover { color: var(--secondary); }
     padding: 30px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra mais forte */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
     border: 1px solid rgba(0,0,0,0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-item:hover {
-    transform: translateY(-12px); /* Efeito de subir */
+    transform: translateY(-12px); 
     box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
@@ -254,6 +269,11 @@ textarea { height: 100px; resize: vertical; }
     white-space: normal;
     text-align: center;
     line-height: 1.3;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--text-dark);
 }
 
 /* ================= RODAPÉ ================== */
@@ -312,20 +332,21 @@ footer {
     justify-content: center;
     text-decoration: none;
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .floating-btn.whats i {
-    font-size: 2.2rem; /* Ícone grande */
+    font-size: 2.2rem;
     margin: 0;
 }
 
 .floating-btn.whats span {
-    display: none; /* Esconde qualquer texto por segurança */
+    display: none; 
 }
 
 .floating-btn.whats:hover { 
-    transform: scale(1.1); 
+    transform: scale(1.1) translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.6);
 }
 
 /* ================= MOBILE ================== */
