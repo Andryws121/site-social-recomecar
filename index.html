@@ -38,8 +38,6 @@
         </div>
     </section>
 
-    <!-- Removida a seção de Estatísticas -->
-
     <section id="sobre" class="container">
         <div class="section-title">
             <h2>Nossa Missão</h2>
@@ -75,7 +73,6 @@
         </div>
     </section>
 
-    <!-- Galeria agora com apenas 2 fotos que funcionam -->
     <section id="fotos" class="container">
         <div class="section-title">
             <h2>Amor em Ação</h2>
@@ -101,8 +98,8 @@
                     
                     <label style="display:block; margin-bottom:10px; font-weight:bold; color:var(--primary);">Enviar para:</label>
                     <select id="escolha_numero" style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 12px; border: 1px solid #ddd;">
-                        <option value="5531988158817">Andre Pedro - (31) 98815-8817</option>
-                        <option value="5531985294671">Fabiane Souza - (31) 98848-7976</option>
+                        <option value="5531988158817">André Pedro - (31) 98815-8817</option>
+                        <option value="5531985294671">Responsável 2 - (31) 98529-4671</option>
                     </select>
 
                     <button type="button" onclick="enviarWhatsapp()" class="btn-submit">
@@ -119,7 +116,7 @@
             <p><strong>Nossos Contatos:</strong></p>
             <div class="social-links">
                 <a href="https://wa.me/5531988158817" target="_blank"><i class="fab fa-whatsapp"></i> (31) 98815-8817</a>
-                <a href="https://wa.me/5531988487976" target="_blank"><i class="fab fa-whatsapp"></i> (31) 98848-7976</a>
+                <a href="https://wa.me/5531985294671" target="_blank"><i class="fab fa-whatsapp"></i> (31) 98529-4671</a>
                 <a href="https://www.instagram.com/socialrecomecaroficial" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
             </div>
             <div class="address-section">
@@ -131,12 +128,17 @@
         </div>
     </footer>
 
+    <!-- BOTÕES FLUTUANTES (Agora são dois!) -->
     <div class="floating-container">
         <a href="https://wa.me/5531988158817" target="_blank" class="floating-btn whats">
-            <i class="fab fa-whatsapp"></i> <span>Quero Ajudar</span>
+            <i class="fab fa-whatsapp"></i> <span>Final 8817</span>
+        </a>
+        <a href="https://wa.me/5531985294671" target="_blank" class="floating-btn whats">
+            <i class="fab fa-whatsapp"></i> <span>Final 4671</span>
         </a>
     </div>
 
+    <!-- SCRIPT DO FORMULÁRIO -->
     <script>
         function enviarWhatsapp() {
             const nomeUser = document.getElementById('nome_user').value;
