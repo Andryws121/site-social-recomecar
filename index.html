@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Recomeçar | Amor que Acolhe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="logo.png" alt="Social Recomeçar Logo" class="logo-img">
+            </div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#doacoes">Como Ajudar</a></li>
+                <li><a href="#fotos">Galeria</a></li>
+                <li><a href="#indicar" class="btn-nav">Indicar Alguém</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Social Recomeçar</h1>
+            <p>Amor que acolhe, cuidado que transforma.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/5531988158817" target="_blank" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i> Falar com Responsável
+                </a>
+                <a href="https://www.instagram.com/socialrecomecaroficial" target="_blank" class="btn-secondary">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Removida a seção de Estatísticas -->
+
+    <section id="sobre" class="container">
+        <div class="section-title">
+            <h2>Nossa Missão</h2>
+        </div>
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p>O <strong>Social Recomeçar</strong> acolhe pessoas em situação de vulnerabilidade, oferecendo ajuda material, mas também cuidado, escuta e apoio. Nosso compromisso é promover dignidade e recomeços por meio do amor ao próximo.</p>
+        </div>
+    </section>
+
+    <section id="doacoes" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>O que estamos precisando?</h2>
+                <p>Sua doação material chega diretamente às mãos de quem precisa.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Alimentos</h3>
+                    <p>Arroz, feijão, óleo, macarrão e leite em pó.</p>
+                </div>
+                <div class="card-item">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Vestuário</h3>
+                    <p>Roupas masculinas, femininas e calçados em bom estado.</p>
+                </div>
+                <div class="card-item">
+                    <i class="fas fa-soap"></i>
+                    <h3>Higiene</h3>
+                    <p>Sabonete, creme dental, fraldas e absorventes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria agora com apenas 2 fotos que funcionam -->
+    <section id="fotos" class="container">
+        <div class="section-title">
+            <h2>Amor em Ação</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=500" alt="Ação 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=500" alt="Ação 2"></div>
+        </div>
+    </section>
+
+    <section id="indicar" class="bg-light">
+        <div class="container">
+            <div class="form-container">
+                <div class="section-title">
+                    <h2>Indicar Família ou Pessoa</h2>
+                    <p>Preencha os dados e escolha para quem deseja enviar a indicação.</p>
+                </div>
+                <form id="formIndicacao">
+                    <input type="text" id="nome_user" placeholder="Seu Nome" required>
+                    <input type="text" id="nome_indicado" placeholder="Nome de quem precisa de ajuda" required>
+                    <input type="tel" id="tel_indicado" placeholder="WhatsApp para contato do indicado" required>
+                    <textarea id="descricao" placeholder="Conte-nos brevemente a situação (Ex: Falta de mantimentos)"></textarea>
+                    
+                    <label style="display:block; margin-bottom:10px; font-weight:bold; color:var(--primary);">Enviar para:</label>
+                    <select id="escolha_numero" style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 12px; border: 1px solid #ddd;">
+                        <option value="5531988158817">Andre Pedro - (31) 98815-8817</option>
+                        <option value="5531985294671">Fabiane Souza - (31) 98848-7976</option>
+                    </select>
+
+                    <button type="button" onclick="enviarWhatsapp()" class="btn-submit">
+                        <i class="fab fa-whatsapp"></i> Enviar Indicação via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container footer-content">
+            <img src="logo.png" alt="Logo" class="footer-logo">
+            <p><strong>Nossos Contatos:</strong></p>
+            <div class="social-links">
+                <a href="https://wa.me/5531988158817" target="_blank"><i class="fab fa-whatsapp"></i> (31) 98815-8817</a>
+                <a href="https://wa.me/5531988487976" target="_blank"><i class="fab fa-whatsapp"></i> (31) 98848-7976</a>
+                <a href="https://www.instagram.com/socialrecomecaroficial" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="address-section">
+                <a href="https://maps.google.com/?q=Av.+Dr.+João+Augusto+Fonseca+e+Silva,+387+-+Novo+Eldorado" target="_blank" class="address-link">
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Dr. João Augusto Fonseca e Silva, 387 - Novo Eldorado, Contagem</p>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Social Recomeçar</p>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <a href="https://wa.me/5531988158817" target="_blank" class="floating-btn whats">
+            <i class="fab fa-whatsapp"></i> <span>Quero Ajudar</span>
+        </a>
+    </div>
+
+    <script>
+        function enviarWhatsapp() {
+            const nomeUser = document.getElementById('nome_user').value;
+            const nomeIndicado = document.getElementById('nome_indicado').value;
+            const telIndicado = document.getElementById('tel_indicado').value;
+            const descricao = document.getElementById('descricao').value;
+            const fone = document.getElementById('escolha_numero').value;
+
+            if(!nomeUser || !nomeIndicado || !telIndicado) {
+                alert("Por favor, preencha os campos obrigatórios.");
+                return;
+            }
+
+            const mensagem = `Olá! Gostaria de fazer uma indicação para o Social Recomeçar:%0A%0A` +
+                             `*Indicado por:* ${nomeUser}%0A` +
+                             `*Nome do indicado:* ${nomeIndicado}%0A` +
+                             `*Contato do indicado:* ${telIndicado}%0A` +
+                             `*Situação:* ${descricao}`;
+
+            const url = `https://wa.me/${fone}?text=${mensagem}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
