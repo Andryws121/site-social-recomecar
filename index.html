@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#doacoes">Como Ajudar</a></li>
-                <li><a href="#fotos">Social em Ação</a></li>
+                <!-- Link de fotos removido daqui -->
                 <li><a href="#indicar" class="btn-nav">Indicar Alguém</a></li>
             </ul>
         </nav>
@@ -25,8 +25,7 @@
 
     <section class="hero">
         <div class="hero-content">
-           <!-- AQUI ENTRA A LOGO DA IGREJA -->
-           <img src="logo-igreja.jpg" alt="Logo Igreja" class="hero-logo">
+            <img src="logo-igreja.jpg" alt="Logo Igreja" class="hero-logo">
             <h1>Social Recomeçar</h1>
             <p>Amor que acolhe, cuidado que transforma.</p>
             <div class="hero-btns">
@@ -126,40 +125,30 @@
         </div>
     </section>
 
-    <section id="fotos" class="container">
-        <div class="section-title">
-            <h2>Social em Ação</h2>
-        </div>
-        <div style="text-align: center; color: #888; padding: 40px 0;">
-            <i class="fas fa-camera" style="font-size: 3rem; margin-bottom: 10px; color: #ccc;"></i>
-            <p style="font-size: 1.1rem;">Em breve, fotos das nossas ações sociais aqui.</p>
-        </div>
-    </section>
+    <!-- Seção de fotos foi removida daqui -->
 
-    <section id="indicar" class="bg-light">
-        <div class="container">
-            <div class="form-container">
-                <div class="section-title">
-                    <h2>Indicar Família ou Pessoa</h2>
-                    <p>Preencha os dados e escolha para quem deseja enviar a indicação.</p>
-                </div>
-                <form id="formIndicacao">
-                    <input type="text" id="nome_user" placeholder="Seu Nome" required>
-                    <input type="text" id="nome_indicado" placeholder="Nome de quem precisa de ajuda" required>
-                    <input type="tel" id="tel_indicado" placeholder="WhatsApp para contato do indicado" required>
-                    <textarea id="descricao" placeholder="Conte-nos brevemente a situação (Ex: Falta de mantimentos)"></textarea>
-                    
-                    <label style="display:block; margin-bottom:10px; font-weight:bold; color:var(--primary);">Enviar para:</label>
-                    <select id="escolha_numero" style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 12px; border: 1px solid #ddd;">
-                        <option value="5531988158817">André Pedro - (31) 98815-8817</option>
-                        <option value="5531985294671">Responsável 2 - (31) 98529-4671</option>
-                    </select>
-
-                    <button type="button" onclick="enviarWhatsapp()" class="btn-submit">
-                        <i class="fab fa-whatsapp"></i> Enviar Indicação via WhatsApp
-                    </button>
-                </form>
+    <section id="indicar" class="container">
+        <div class="form-container">
+            <div class="section-title">
+                <h2>Indicar Família ou Pessoa</h2>
+                <p>Preencha os dados e escolha para quem deseja enviar a indicação.</p>
             </div>
+            <form id="formIndicacao">
+                <input type="text" id="nome_user" placeholder="Seu Nome" required>
+                <input type="text" id="nome_indicado" placeholder="Nome de quem precisa de ajuda" required>
+                <input type="tel" id="tel_indicado" placeholder="WhatsApp para contato do indicado" required>
+                <textarea id="descricao" placeholder="Conte-nos brevemente a situação (Ex: Falta de mantimentos)"></textarea>
+                
+                <label style="display:block; margin-bottom:10px; font-weight:bold; color:var(--primary);">Enviar para:</label>
+                <select id="escolha_numero" style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 12px; border: 1px solid #ddd;">
+                    <option value="5531988158817">André Pedro - (31) 98815-8817</option>
+                    <option value="5531985294671">Responsável 2 - (31) 98529-4671</option>
+                </select>
+
+                <button type="button" onclick="enviarWhatsapp()" class="btn-submit">
+                    <i class="fab fa-whatsapp"></i> Enviar Indicação via WhatsApp
+                </button>
+            </form>
         </div>
     </section>
 
@@ -213,4 +202,3 @@
     </script>
 </body>
 </html>
-
